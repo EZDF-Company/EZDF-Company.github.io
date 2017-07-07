@@ -1,0 +1,1630 @@
+
+/*----------------------------------------------------------------------- 
+table of content
+-------------------------------------------------------------------------* /
+
+"eris - is a Premium HTML Responsive Templeate by HTMLmate Team. You can use this for anykind of Bussiness issue"
+
+File:           CSS Base
+Version:        1.1
+Last change:     
+Author:         HTMLmate
+
+
+/* ----------------------------
+* 1 = Fonts 
+* 2 = Global 
+* 3 = Header
+* 4 = Ways of help
+* 5 = Countdown
+* 6 = Recent Causes
+* 7 = Our Impact
+* 8 = Can We Do
+* 9 = Video bg section
+* 10 = Latest news
+* 11 = Partner 
+* 12 = Footer
+* 13 = page head section
+
+/*----------------------------------------------------------------------- 
+End of Table of Content
+-------------------------------------------------------------------------* /
+
+
+/*----------------------------------------------------------------------- 
+fonts [*1]
+-------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700|Handlee')
+
+/*----------------------------------------------------------------------- 
+Global
+-------------------------------------------------------------------------*/
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 15px;
+	line-height: 1.67;
+	letter-spacing: .5px;
+	background-color: #fff;
+	color: #8da0bf;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	
+}
+.hamdlee {
+	font-family: 'Handlee', cursive;
+}
+.ul-li ul {
+	margin:0;
+	padding: 0;
+}
+.ul-li  li {
+	display: inline-block;
+	list-style: none;
+}
+.ul-li-block li {
+	display: block;
+}
+.section-padding {
+	padding: 95px 0px;
+}
+section {
+	overflow: hidden;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	transition: .3s all ease-in-out;
+
+}
+.form-control:focus,button:visited,button.active,button:hover,button:focus,input:visited,input.active,input:hover,
+input:focus,textarea:hover,textarea:focus,a:hover,a:focus,a:visited,a.active,select,select:hover, select:focus, select:visited {
+	outline: none;
+	box-shadow: none;
+	text-decoration: none;
+	color: inherit;
+}
+.form-control {
+	box-shadow: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	font-weight: normal;
+	font-family: 'Montserrat', sans-serif; 
+}
+.eris-btn {
+	height: 65px;
+	width: 205px;
+	background-color: #f3474b;
+	line-height: 70px;
+	text-align: center;
+}
+.eris-btn a {
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	color: #fff;
+}
+.section-title {
+	padding-bottom: 100px;
+}
+.section-title h2,
+.sub-title h2 {
+	font-size: 35px;
+	font-weight: 700;
+	color: #00468c;
+	position: relative;
+	overflow: visible;
+	padding-top: 30px;
+}
+.section-title h2:after,
+.banner-area-head h1:after,
+.sub-title h2:after,
+.widgettile:after,
+.page-title h2:after {
+	position: absolute;
+	top: 0px;
+	background-color: #a3b2ca;
+	height: 1px;
+	width: 60px;
+	content: '';
+	left: 48%;
+}
+.section-title h2:before,
+.banner-area-head h1:before,
+.sub-title h2:before,
+.widgettile:before,
+.page-title h2:before {
+	position: absolute;
+	top: 0px;
+	background-color: #a3b2ca;
+	height: 1px;
+	width: 7px;
+	content: '';
+	left: 47%;
+}
+.banner-area-head h1:after,
+.banner-area-head h1:before {
+	background-color: #fff;
+}
+.sub-title h2:before {
+	left: 0%;
+}
+.sub-title h2:after {
+	left: 3%;
+}
+.display {
+	display: table;
+	width: 100%;
+}
+.widgettile:before,
+.widgettile:after {
+	background-color: #fff;
+}
+.widgettile:before {
+	left: 0;
+	top: 46px;
+}
+.widgettile:after {
+	left: 5%;
+	top: 46px;
+	width: 30px;
+}
+/*----------------------------------------------
+Margin setting
+------------------------------------------------*/
+.ml40{margin-left: 40px;}
+.ml10{margin-left: 10px;}
+.mr40{margin-right: 40px;}
+.mr15{margin-right: 15px;}
+.mr10{margin-right: 10px;}
+.mr20{margin-right: 25px;}
+.mt40{margin-top: 40px;}
+.mt25{margin-top: 25px;}
+.mt10{margin-top: 10px;}
+.mt80{margin-top: 80px;}
+.mt15{margin-top: 15px;}
+.mb45{margin-bottom: 45px;}
+.mb50{margin-bottom: 50px;}
+.mb10{margin-bottom: 10px;}
+
+/*------------------------------------------------
+Padding setting
+--------------------------------------------------*/
+.pb30 {padding-bottom: 30px;}
+.pb5 {padding-bottom: 5px;}
+.pb20 {padding-bottom: 20px;}
+.pb35 {padding-bottom: 35px;}
+.pb80 {padding-bottom: 80px;}
+.pb90 {padding-bottom: 90px;}
+.pb100 {padding-bottom: 100px;}
+.pb70 {padding-bottom: 70px;}
+.pb95 {padding-bottom: 95px;}
+.pb65 {padding-bottom: 65px;}
+.pb45 {padding-bottom: 45px;}
+.pb50 {padding-bottom: 50px;}
+.pb40 {padding-bottom: 40px;}
+.pb55 {padding-bottom: 55px;}
+.pb25 {padding-bottom: 25px;}
+.pb75 {padding-bottom: 75px;}
+.pr1{padding-right: 1px;}
+.pl0{padding-left: 0;}
+.no-padding {padding: 0;}
+.pt90{padding-top: 90px;}
+.pt100{padding-top: 100px;}
+.pt110{padding-top: 110px;}
+.pt150{padding-top: 150px;}
+.pt20{padding-top: 20px;}
+.pt80{padding-top: 80px;}
+.pt40{padding-top: 40px;}
+.pt60{padding-top: 60px;}
+.p25{padding: 25px 0px}
+
+
+
+/*----------------------------------------------------------------------- 
+Start of banner-area-section
+-------------------------------------------------------------------------*/
+.jarallax {
+	background-image: url(../img/banner/hero-banner.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.hero-banner-content {
+	display: table;
+	width: 100%;
+	height: 885px;
+	background: -moz-linear-gradient( 112deg, rgba(243,71,75, 0.8) 0%, rgba(227,135,0, 0.8) 100%);
+	background: -webkit-linear-gradient( 112deg, rgba(243,71,75, 0.8) 0%, rgba(227,135,0, 0.8) 100%);
+	background: -ms-linear-gradient( 112deg, rgba(243,71,75, 0.8) 0%, rgba(227,135,0, 0.8) 100%);
+	color: #fff;
+}
+.banner-area-head h1 {
+	font-size: 60px;
+	position: relative;
+	padding-top: 15px;
+}
+.banner-area-text p {
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+.banner-btn .eris-btn {
+	margin: 0 auto;
+}
+.banner-area-section {
+	position: relative;
+}
+.banner-area-head {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 25%;
+	transform: translate(-25% 0%);
+}
+/*----------------------------------------------------------------------- 
+End of banner-area-section
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+Start of feature section
+-------------------------------------------------------------------------*/
+.feature-item {
+	width: 19%;
+	float: left;
+	border: 1px solid #f3f5f8;
+	padding: 75px 15px;
+	margin: 10px;
+	margin-right: 2px;
+	transition: .3s all ease-in-out;
+	background-color: #fff;
+}
+
+.feature-title h3 {
+	font-size: 26px;
+	color: #00468c;
+}
+.feature-item:hover  {
+	margin-top: -45px;
+	position: relative;
+	box-shadow: 2px 5px 20px 6px rgba(222, 222, 222, 0.5);
+}
+@media screen and (max-width: 1500px) { 
+	.feature-title h3 {
+		font-size: 18px;
+	}
+	.feature-item {
+		padding: 45px 15px;
+	}
+}
+.feature-section {
+	overflow: visible;
+	padding-bottom: 90px;
+	display: table;
+	width: 100%;
+}
+/*----------------------------------------------------------------------- 
+End of  feature section
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+Start of popular work
+-------------------------------------------------------------------------*/
+.work-item {
+	margin-bottom: 1px;
+	overflow: hidden;
+	position: relative;
+}
+.title-project {
+	display: block;
+	font-size: 18px;
+	color: #fff;
+}
+.hover-content {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: .4s all ease-in-out;
+	transition-delay: .3s;
+}
+.ovarlay,
+.img-ovarlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(0, 70, 140);
+	top: 0;
+	opacity: 0;
+	transform: scale(.5);
+	transition: .3s all ease-in-out;
+}
+.project-dec {
+	color: #a9a4a4;
+}
+.work-item:hover .ovarlay {
+	transform: scale(1);
+	opacity: .8;
+}
+.work-item img {
+	transform: scale(1);
+	transition: .3s all ease-in-out;
+}
+.work-item:hover img {
+	transform: scale(1.05);
+}
+.work-item:hover .hover-content {
+	top: 50%;
+	opacity: 1;
+} 
+.view-more {
+	display: table;
+	width: 100%;
+}
+.view-more a {
+	font-size: 16px;
+	font-weight: 700;
+	color: #00468c;
+}
+.display {
+	display: table;
+	width: 100%;
+}
+/*----------------------------------------------------------------------- 
+End of  popular work
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+End of  popular work
+-------------------------------------------------------------------------*/
+.work-style-section {
+	background-color: #f4f7fa;
+	padding-bottom: 170px;
+}
+.back-img {
+	position: relative;
+	max-width: 470px;
+}
+.img-ovarlay {
+	opacity: .7;
+	transform: scale(1);
+}
+.left-side-img {
+	position: relative;
+} 
+.front-img {
+	position: absolute;
+	top: 80px;
+	left: 100px;
+}
+.work-style-title h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #00468c;
+}
+/*----------------------------------------------------------------------- 
+End of  popular work
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+Start of our team member
+-------------------------------------------------------------------------*/
+.team-member-section {
+	padding-top: 110px;
+	padding-bottom: 150px;
+}
+.team-member-section .sub-title h2:after,
+.blog-section .sub-title h2:after{
+	left: 1%;
+}
+.member-text-pic {
+	border: 1px solid #f3f5f8;
+	max-height: 500px;
+	overflow: hidden;
+	transition: .3s all ease-in-out;
+}
+
+.member-name-designation {
+	padding: 160px 50px 50px;
+	transition: .3s all ease-in-out;
+}
+.member-name-designation .name a {
+	display: block;
+	font-weight: 700;
+	color: #00468c;
+	font-size: 16px;
+}
+.designation {
+	color: #d9dfea;
+}
+.member-text-pic:hover .member-name-designation {
+	padding: 50px 50px 50px;
+}
+.member-text-pic:hover {
+	box-shadow: 2px 5px 20px 6px rgba(222, 222, 222, 0.5);
+}
+.member-pic {
+	position: relative;
+}
+.img-hover {
+	position: absolute;
+	top: -30px;
+	right: 0px;
+	height: 60px;
+	width: 60px;
+	background-color: #ff9800;
+	line-height: 60px;
+	text-align: center;
+	transition: .3s all ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+	transition-delay: .3s;
+}
+.img-hover a {
+	display: block;
+	width: 100%;
+	color: #fff;
+}
+.member-text-pic:hover .img-hover {
+	right: 60px;
+	opacity: 1;
+	visibility: visible;
+}
+/*----------------------------------------------------------------------- 
+End of our team member
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+Start of testimonials
+-------------------------------------------------------------------------*/
+.testimonial-section {
+	padding: 100px 0px;
+	background: -moz-linear-gradient( 112deg, rgba(243,71,75,1) 0%, rgba(227,135,0,1) 100%);
+	background: -webkit-linear-gradient( 112deg, rgba(243,71,75,1) 0%, rgba(227,135,0,1) 100%);
+	background: -ms-linear-gradient( 112deg, rgba(243,71,75,1) 0%, rgba(227,135,0,1) 100%);
+}
+.testimonial-section .section-title h2 {
+	color: #fff;
+}
+.testimonial-section .section-title h2:before,
+.testimonial-section .section-title h2:after {
+	background-color: #fff;
+}
+.testimonial-pic {
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
+	border-radius: 100%;
+}
+.testi-icon i {
+	color: #df8d3b;
+	font-size: 44px;
+}
+.testimonial-dec {
+	overflow: hidden;
+	color: #fff;
+	margin-top: -35px;
+}
+.testimonial-text {
+	display: table;
+}
+.testimonial-pic-text .member-name-designation {
+	padding: 25px 0px;
+}
+.testimonial-pic-text .member-name-designation .name a {
+	color: #f6e029;
+}
+.testimonial-slide .owl-dots {
+	text-align: center;
+	margin-top: 20px;
+}
+.testimonial-slide .owl-dot {
+	height: 5px;
+	width: 25px;
+	background-color: rgba(195, 195, 195, 0.56);
+	border-radius: 8px;
+	display: inline-block;
+	margin: 0px 6px;
+}
+.testimonial-slide .owl-dot.active {
+	background-color:  #f6e029;
+}
+/*----------------------------------------------------------------------- 
+End of testimonials
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+Start of blog section
+-------------------------------------------------------------------------*/
+.blog-section {
+	padding: 100px 0px;
+}
+.blog-text-pic {
+	border: 1px solid #f3f5f8;
+}
+.blog-content-text {
+	padding: 135px 50px 45px;
+}
+.blog-content-text h3 a {
+	font-size: 18px;
+	font-weight: 700;
+	color: #00468c;
+	transition: .3s all ease-in-out;
+}
+.blog-content-text h3 a:hover {
+	color: #ff9800;
+}
+.blog-tag {
+	padding-bottom: 5px;
+}
+.blog-tag a {
+	color:  #f3474b;
+}
+.blog-pic {
+	position: relative;
+}
+.blog-meta.ul-li {
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+}
+.meta-list li a {
+	color: #fff;
+}
+/*----------------------------------------------------------------------- 
+End of blog section
+-------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- 
+Start of advantage section
+-------------------------------------------------------------------------*/
+.advantage-section {
+	padding: 100px 0px 120px;
+	background-color: #f4f7fa;
+}
+.advantage-section .work-style-icon-text {
+	margin-bottom: 35px;
+}
+
+.advantage-left-content {
+	max-width: 470px;
+}
+.advantage-section .front-img {
+	left: 0px;
+}
+.advantage-section .back-img {
+	float: right;
+}
+/*----------------------------------------------------------------------- 
+End of advantage section
+-------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------- 
+Satrt of pricing section
+-------------------------------------------------------------------------*/
+.pricing-section {
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+.pricing-pic {
+	position: relative;
+}
+.content-price {
+	font-size: 50px;
+	font-weight: 700;
+	color: #f3474b;
+	font-family: 'Montserrat', sans-serif; 
+}
+.content-duration,
+.content-currency  {
+	font-family: 'Montserrat', sans-serif; 
+	font-weight: 700;
+	font-size: 16px;
+	font-weight: 700;
+	color: #00468c;
+}
+.content-currency {
+	position: relative;
+	bottom: 22px;
+}
+.img-content-price {
+	position: absolute;
+	top: 28%;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.pricing-tag {
+	height: 50px;
+	width: 180px;
+	line-height: 50px;
+	background-color: #f6e029;
+	margin: 30px auto;
+}
+.pricing-tag  a {
+	font-size: 16px;
+	font-weight: 700;
+	color: #00468c;
+}
+.pricing-text {
+	background-color: #f4f7fa;
+	padding: 70px 50px 50px;
+}
+.pricing-list li {
+	margin-bottom: 15px;
+}
+.pricing-list li a {
+	color: #8da0bf;
+}
+.pricing-text.middle {
+	background-color: #fff;
+}
+.pricing-text-pic {
+	transition: .3s all ease-in-out;
+}
+.pricing-text-pic:hover {
+	transform: scale(1.05);
+	box-shadow: 2px 5px 20px 6px rgba(222, 222, 222, 0.5);
+	position: relative;
+	z-index: 1;
+}
+
+.partner-section {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+/*----------------------------------------------------------------------- 
+End of pricing section
+-------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------- 
+Start of footer section
+-------------------------------------------------------------------------*/
+.footer-area-section {
+	background-color: #00468c;
+	padding: 100px 0px 90px;
+	position: relative;
+	overflow: visible;
+}
+.footer-item.first {
+	max-width: 250px;
+}
+.widgettile {
+	color: #fff;
+	position: relative;
+	padding-bottom: 30px;
+	font-size: 16px;
+}
+.footer-social li {
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	border: 1px solid;
+	line-height: 35px;
+	margin-right: 10px;
+	transition: .3s all ease-in-out;
+}
+.footer-social li:hover {
+	transform: skewX(-20deg);
+}
+.footer-social li  a {
+	color: #8da0bf;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+.use-link li {
+	width: 45%;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.use-link li:before {
+	position: absolute;
+	content: '';
+	background-color: #fff;
+	height: 1px;
+	width: 5px;
+	top: 12px;
+	left: -15px;
+}
+.use-link li a {
+	color: #8da0bf;
+	transition: .3s all ease-in-out;
+}
+.footer-blog-pic {
+	margin-right: 18px;
+}
+.blog-link a {
+	color: #8da0bf;
+	transition: .3s all ease-in-out;
+}
+.blog-link a:hover,
+.use-link li a:hover {
+	color: #fff;
+}
+.footer-blog-item {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.gallery-pic-list li {
+	margin-bottom: 6px;
+}
+.copy-right {
+	background-color: #07529c;
+	padding: 20px;
+}
+.scrollup {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	display: none;
+	background-color: #ff9800;
+	top: -30px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 60px;
+	color: #fff !important;
+}
+.scrollup:hover {
+	color: #fff;
+}
+.input-group .form-control {
+	z-index: 0;
+}
+/*----------------------------------------------------------------------- 
+End of footer section
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+
+-------------------------    HOME-2   -----------------------------------
+
+-------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- 
+ Start of hero banner
+ -------------------------------------------------------------------------*/
+ .home-2 .jarallax {
+ 	background-image: url(../img/banner/hero-banner-2.jpg);
+ }
+ .home-2  .hero-banner-content {
+ 	display: table;
+ 	width: 100%;
+ 	height: 885px;
+ 	background: none;
+ 	color: #fff;
+ }
+ .home-2 .banner-area-head h1 {
+ 	font-size: 100px;
+ 	color: #00468c;
+ 	font-weight: 700;
+ 	padding-bottom: 0;
+ }
+ .home-2 .banner-area-text p {
+ 	color: #6b90b4;
+ }
+ .home-2 .banner-area-text {
+ 	padding-bottom: 30px;
+ }
+ .home-2 .banner-area-head h1:after, 
+ .home-2 .banner-area-head h1:before, 
+ .page-title h2:after, 
+ .page-title h2:before {
+ 	background-color: #f3474b;
+ }
+/*----------------------------------------------------------------------- 
+ End of hero banner
+ -------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- 
+ Start of feature details section
+ -------------------------------------------------------------------------*/
+ .feature-detail-dection {
+ 	padding-top: 90px;
+ 	padding-bottom: 20px;
+ }
+ .feature-detail-item .feature-title h3 {
+ 	font-size: 22px;
+ }
+ .feature-text {
+ 	max-width: 300px;
+ 	margin: 0 auto;
+ }
+ .feature-detail-item {
+ 	padding: 70px 0px;
+ 	transition: .3s all ease-in-out;
+ }
+ .feature-detail-item:hover {
+ 	box-shadow: 2px 5px 20px 6px rgba(222, 222, 222, 0.5);
+ }
+/*----------------------------------------------------------------------- 
+ End of feature details section
+ -------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+ Start of most popular work
+ -------------------------------------------------------------------------*/
+ .most-popular-work {
+ 	padding-top: 70px;
+ }
+ .most-popular-pic {
+ 	width: 19.9%;
+ 	float: left;
+ 	margin-right: 1px;
+ }
+ .most-popular-item .hover-text i {
+ 	font-size: 25px;
+ 	color: #fff;
+ }
+/*----------------------------------------------------------------------- 
+ End of most popular work
+ -------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------- 
+ Start of main advantage
+ -------------------------------------------------------------------------*/
+ .advantage-icon-text .work-style-title h3 {
+ 	font-size: 22px;
+ }
+ .work-text-dec{
+ 	overflow: hidden;
+ }
+ .advantage-icon-text {
+ 	margin-bottom: 95px;
+ }
+ .home-2 .blog-section {
+ 	background-color: #f4f7fa;
+ }
+ .home-2 .blog-text-pic {
+ 	background-color: #fff;
+ }
+ .main-advantage-section {
+ 	padding-top: 100px;
+ }
+
+/*----------------------------------------------------------------------- 
+ End of main advantage
+ -------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- 
+ Start of video play section
+ -------------------------------------------------------------------------*/
+ .video-play-section .banner-area-head {
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ }
+ .home-2 .video-play-section .banner-area-head h1 {
+ 	padding-bottom: 20px;
+ }
+ .home-2 .video-play-section  .banner-area-text p {
+ 	letter-spacing: 0;
+ }
+ .home-2 .video-play-section .jarallax {
+ 	background-image: url(../img/banner/video-banner.jpg);
+ }
+ .home-2 .video-play-section .banner-area-head h1:after, .home-2 .video-play-section  .banner-area-head h1:before {
+ 	background-color: #00468c;
+ }
+/*----------------------------------------------------------------------- 
+ End video play section
+ -------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+ Start of newsletter section
+ -------------------------------------------------------------------------*/
+ .newsletter-section {
+ 	padding-top: 100px;
+ 	padding-bottom: 150px;
+ }
+ .newsletter-form {
+ 	max-width: 630px;
+ 	margin: 0 auto;
+ 	box-shadow: 0px 0px 15px 5px rgba(222, 222, 222, 0.5);
+ }
+ .newsletter-section .section-title {
+ 	padding-bottom: 65px;
+ }
+ .newsletter-form input {
+ 	height: 68px;
+ 	border: none;
+ 	border-radius: 0;
+ 	padding: 15px;
+ }
+ span.input-group-addon,
+ .contact-us-form button {
+ 	background-color: #f3474b;
+ 	border: none;
+ 	padding: 6px 60px;
+ }
+ span.input-group-addon button {
+ 	background-color: transparent;
+ 	color: #fff;
+ 	border: none;
+ }
+/*----------------------------------------------------------------------- 
+ End of newsletter section
+ -------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+
+------------------------------- HOME-PAGE-3-----------------------------
+
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+ Start of home page 3 banner
+ -------------------------------------------------------------------------*/
+ .jarallax.v3 {
+ 	background-image: url(../img/banner/hero-banner-3.jpg)
+ }
+ .banner-area-head.v3 {
+ 	left: 10%;
+ 	right: inherit;
+ 	max-width: 430px;
+ }
+ .banner-area-head.v3 h1,
+ .banner-area-head h2 {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	color: #00468c;
+ }
+ .banner-area-head h2 span {
+ 	font-weight: 700;
+ 	color: #fff;
+ }
+ .home-2 .banner-area-head.v3 h1:after {
+ 	left: 7%;
+ }
+ .home-2 .banner-area-head.v3 h1:before {
+ 	left: 15px;
+ }
+ .banner-area-head.v3 .banner-btn .eris-btn {
+ 	margin-left: 15px;
+ }
+ .banner-slide span {
+ 	font-size: 57px;
+ 	font-weight: 700;
+ 	background-color: #00468c;
+ }
+/*----------------------------------------------------------------------- 
+ End of home page 3 banner
+ -------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+Start of home 3 content
+-------------------------------------------------------------------------*/
+.left-side-content-area,
+.right-side-content-area{
+	margin-left: 30px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 1px solid #e5e5e5;
+	max-width: 510px;
+
+}
+.content-title .widgettile  {
+	color: #00468c;
+}
+.content-title .widgettile:before,
+.content-title .widgettile:after {
+	background-color: #00468c;
+	top: 25px;
+}
+.content-title .widgettile:after{
+	left: 3%;
+}
+.content-img  {
+	position: relative;
+}
+.img-icon {
+	position: absolute;
+	top: 36%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	text-align: center;
+	transform: scale(0);
+	transition: .3s all ease-in-out;
+}
+.content-img:hover .img-icon {
+	transform: scale(1);
+}
+.page-content-section {
+	overflow: visible;
+}
+.right-side-content-area {
+	margin-top: -100px;
+	padding-bottom: 190px;
+}
+/*----------------------------------------------------------------------- 
+End of of home 3 content
+-------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- 
+STart of most-service-section
+-------------------------------------------------------------------------*/
+
+.most-service-section {
+	padding-top: 100px;
+	background-color: #f4f7fa; 
+}
+.service-here-content .advantage-icon-text {
+	margin-bottom: 60px;
+}
+.service-here-content .work-style-title h3 {
+	font-size: 22px;
+	font-weight: 400;
+}
+.service-here-content {
+	padding-bottom: 35px;
+	border-bottom: 1px solid #e4e9f0;
+}
+/*----------------------------------------------------------------------- 
+End of most-service-section
+-------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- 
+Start of testimonila version 2
+-------------------------------------------------------------------------*/
+.testimonial-section.v2 {
+	background: none;
+	background-color: #f4f7fa;
+}
+
+.testimonial-section.v2 .section-title h2,
+.testimonial-section.v2 .testimonial-dec {
+	color: #00468c;
+}
+.testimonial-section.v2 .testi-icon i {
+	color: #fff;
+}
+.testimonial-section.v2 .testimonial-pic-text .member-name-designation .name a {
+	color: #ff9800;
+}
+.testimonial-section.v2 .testimonial-slide .owl-dot.active {
+	background-color: #ff9800;
+}
+.testimonial-section.v2 .section-title h2:before, .testimonial-section.v2 .section-title h2:after {
+	background-color: #00468c;
+}
+/*----------------------------------------------------------------------- 
+End of testimonila version 2
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+Start of breadcrum section
+-------------------------------------------------------------------------*/
+.page-head-section {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	padding-bottom: 280px;
+	background-image: url(../img/banner/bred-banner.jpg);
+	background-attachment: fixed;
+}
+.page-title h2 {
+	font-size: 60px;
+	font-weight: 700;
+	color: #00468c;
+	position: relative;
+	padding-top: 20px;
+}
+.breadcrumb {
+	background-color: transparent;
+}
+.breadcrumb>li+li:before {
+	content: "\f105";
+	font-family: 'fontawesome';
+	color: #00468c;
+	font-weight: 700;
+}
+.page-head-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.breadcrumb li {
+	font-size: 12px;
+}
+.breadcrumb-item.active {
+	color: #00468c;
+	font-weight: 700;
+}
+/*----------------------------------------------------------------------- 
+End of  breadcrum section
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+Start of about us page
+-------------------------------------------------------------------------*/
+.expart-agency-section .sub-title h2:after, 
+.our-service-section .sub-title h2:after {
+	left: 1%;
+}
+.expart-item {
+	max-width: 540px;
+}
+.most-service-section.about-us {
+	background-color: #fff;
+}
+.team-member-section.about-us {
+	padding-top: 95px;
+	padding-bottom: 100px;
+}
+/*----------------------------------------------------------------------- 
+End of about us page
+-------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------- 
+Start of service section
+-------------------------------------------------------------------------*/
+.our-service-section .service-here-content {
+	border-bottom: none;
+}
+.main-service-item-pic {
+	width: 33.33%;
+	position: relative;
+	float: left;
+}
+.main-service-item-pic .content-title {
+	position: absolute;
+	top: 47%;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.main-service-item-pic .content-title .widgettile {
+	color: #fff;
+}
+.main-service-item-pic .content-title .widgettile:before,
+.main-service-item-pic .content-title .widgettile:after {
+	background-color: #fff;
+	left: 50%;
+}
+.main-service-item-pic .content-title .widgettile:before {
+	left: 47%;
+}
+.main-service-item-pic .img-icon {
+	top: 26%;
+
+}
+.advantage-section.service {
+	background-color: #fff;
+	padding-top: 0;
+}
+/*----------------------------------------------------------------------- 
+End of service section
+-------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- 
+Start of portfolio page
+-------------------------------------------------------------------------*/
+
+.portfolio-2-section .work-style-title h3 {
+	color: #ff9800;
+}
+.portfolio-2-section .work-style-content {
+	padding-bottom: 80px;
+}
+.portfolio-2-section .right-side-work {
+	margin-left: 80px;
+}
+.sub-title h2 a {
+	color: #00468c;
+}
+.pagination {
+	margin: 0;
+}
+.pagination li a {
+	margin-right: 10px;
+	color: #a3b2ca;
+}
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span{
+	border-radius: 0;
+}
+.pagination>li:first-child>a {
+	float: left;
+}
+
+.portfolio-2-section .right-side-work.left-side {
+	margin-left: 0;
+	margin-right: 70px;
+}
+.jarallax.portfolio-preview {
+	background-image: url(../img/banner/preview-banner.jpg);
+}
+.home-2 .portfolio-preview-section .banner-area-head h1,
+.home-2 .portfolio-preview-section .banner-area-text p {
+	color: #fff;
+	padding-bottom: 25px;
+}
+/*----------------------------------------------------------------------- 
+End of portfolio page
+-------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- 
+Start of contact section
+-------------------------------------------------------------------------*/
+.feature-section.contact .feature-item {
+	padding: 80px 15px;
+}
+.feature-section.contact .feature-item:last-child    {
+	padding-bottom: 55px;
+}
+.contact-info {
+	position: relative;
+}
+.contact-text-list li {
+	font-size: 22px;
+	color: #fff;
+}
+.contact-text {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translateY(-50%);
+}
+.contact-address span {
+	color: #fff;
+}
+.contact-address {
+	max-width: 230px;
+}
+.contact-text-list li i {
+	background-color: #f3474b;
+	border-radius: 100%;
+	margin-right: 15px;
+	height: 55px;
+	width: 55px;
+	text-align: center;
+	line-height: 55px;
+}
+.contact-text-list li {
+	margin-bottom: 20px;
+}
+.contact-info .name {
+	width: 100%;
+}
+.contact-info .sub {
+	margin-left: 22px; 
+}
+.contact-info-item-2,
+.contact-info-item-2 {
+	width: 47%;
+	float: left;
+	position: relative;
+}
+.contact-info-item-2.phone {
+	margin-left: 27px;
+}
+.contact-info-item,
+.contact-info-msg {
+	position: relative;
+	width: 100%;
+}
+.contact-info-item input,
+.contact-info-item-2 input,
+.contact-info-msg textarea {
+	height: 50px;
+	padding: 0px 40px;
+	border: 1px solid #ccdae8;
+	box-shadow: none;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.eris-contact-form .contact-info-item span,
+.eris-contact-form .contact-info-item-2 span,
+.contact-info-msg span {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	color: #f3474b;
+	font-size: 20px;
+}
+.contact-info-msg textarea {
+	padding: 15px 40px;
+	height: 112px;
+}
+.contact-us-form button {
+	padding: 20px;
+	color: #fff;
+	font-weight: 700;
+}
+.contact-us-form button i {
+	margin-left: 15px;
+}
+.contact-form-area {
+	box-shadow: 0px 0px 15px 5px rgba(222, 222, 222, 0.5);
+	margin: 15px;
+}
+.eris-contact-form {
+	padding: 60px 80px 0px 0px;
+}
+.google-map-container {
+    width: 100%;
+    height: 500px;
+    background-color: #dddddd;
+}
+/*----------------------------------------------------------------------- 
+End of contact section
+-------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- 
+Start of blog page
+-------------------------------------------------------------------------*/
+.blog-page-archive-content .back-img,
+.blog-single-pic-text .back-img {
+	max-width: 720px;
+}
+.blog-page-archive-content .front-img,
+.blog-single-pic-text .front-img {
+	top: 50px;
+	left: 50px;
+}
+.blog-page-archive-content .sub-title h2 a,
+.blog-single-pic-text .sub-title h2 a {
+	letter-spacing: -1.5px;
+}
+.blog-page-archive-content .sub-title h2:after,
+.blog-single-pic-text .sub-title h2:after {
+	left: 2%;
+}
+.blog-page-text {
+	margin-left: 50px;
+	border-bottom: 1px solid #edf0f4;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+.blog-page-meta {
+	margin-left: 100px;
+	margin-bottom: -12px;
+}
+.blog-page-meta li a {
+	color: #00468c;
+}
+.blog-item-search input {
+	height: 50px;
+	padding:15px;
+	width: 100%;
+}
+.blog-side-item {
+	margin-left: 70px;
+}
+.blog-item-search {
+	position: relative;
+}
+.eris-button  button {
+	position: absolute;
+	right: 15px;
+	top: 0;
+	height: 50px;
+	background: transparent;
+	border: none;
+	color: #f3474b;
+}
+.blog-side-area-content .widgettile {
+	color: #00468c;
+}
+.blog-side-area-content .widgettile:before,
+.blog-side-area-content .widgettile:after {
+	background-color: #00468c;
+	top: -20px;
+}
+.category-list-item li {
+	margin-bottom: 15px;
+	position: relative;
+	padding-left: 30px;
+}
+.category-list-item li:before {
+	position: absolute;
+	content: '';
+	top: 13px;
+	height: 1px;
+	width: 4px;
+	background-color: #f3474b;
+	left: 0;
+}
+.category-list-item li a {
+	color: #00468c;
+}
+.blog-side-area-content {
+	border-bottom: 1px solid;
+	padding-bottom: 20px
+}
+.rec-img {
+	margin-right: 20px;
+}
+.rec-link h3 a {
+	font-size: 18px;
+	color: #00468c;
+}
+.rec-nws-meta a {
+	font-size: 12px;
+	color: #8da0bf;
+}
+.side-tab-img-text {
+	display: inline-block;
+	margin-bottom: 30px;
+}
+.blog-tag-item li {
+	display: inline-flex;
+	margin: 5px 10px 10px 0px;
+}
+.blog-tag-item li a {
+	border: 1px solid #8da0bf;
+	padding: 5px 10px;
+	color: #8da0bf;
+	transition: .3s all ease-in-out;
+}
+.blog-tag-item li a:hover {
+	background-color: #f3474b;
+	color: #fff;
+	border: 1px solid #f3474b;
+}
+mark {
+	background-color:  #ff0;
+}
+.blog-page-details h2 {
+	font-size: 35px;
+	color: #00468c;
+	font-weight: 700;
+}
+.blog-single-quate {
+	background-color: #f4f7fa;
+	padding: 65px 20px 20px 20px;
+	position: relative;
+	z-index: 1;
+}
+.blog-single-quate .testi-icon {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.blog-single-quate .testi-icon i {
+	color: #ffffff;
+}
+.blog-single-quate  .member-name-designation {
+	padding-top: 15px;
+}
+.blog-single-quate  .member-name-designation .name a {
+	color: #ff9800;
+}
+.blog-single-quate blockquote {
+	border: none;
+	position: relative;
+	z-index: 2;
+}
+.blog-single-section .blog-page-text  {
+	border-bottom: none;
+}
+.author-pic {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	float: left;
+	margin-right: 25px;
+}
+.author-comment-pic {
+	background-color: #f4f7fa;
+	padding: 100px 80px 80px 80px;
+}
+.author-comment-pic .member-name-designation {
+	padding: 20px;
+}
+.author-comment-pic .member-name-designation .name a {
+	color: #ff9800;
+}
+.comment-list {
+	font-weight: 700;
+	margin-right: 45px;
+}
+.comment-number {
+	border-bottom: 2px solid #eff2f6;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	position: relative;
+} 
+.comment-number:before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 100px;
+    bottom: -3px;
+    background-color: #ff9800;
+}
+.log-in strong {
+	margin: 10px 10px;
+}
+.comment-box-input input {
+	width: 90%;
+	height: 50px;
+	border: 2px solid #eff2f6;
+}
+/*----------------------------------------------------------------------- 
+End of blog page
+-------------------------------------------------------------------------*/
